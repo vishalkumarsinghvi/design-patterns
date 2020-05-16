@@ -4,41 +4,32 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".MainActivity">
-
-  <Button
-    android:id="@+id/btn_mvp"
+  tools:context=".mvp.view.MVPActivity">
+  <EditText
+    android:id="@+id/et_email"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="MVP"
+    android:ems="10"
+    android:inputType="textEmailAddress"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
-  <Button
-    android:id="@+id/btn_mvc"
+  <EditText
+    android:id="@+id/et_username"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="32dp"
-    android:text="MVC"
-    app:layout_constraintBottom_toTopOf="@+id/btn_mvp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent" />
-  <Button
-    android:id="@+id/btn_mvvm"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="32dp"
-    android:text="MVVM"
+    android:layout_marginTop="16dp"
+    android:ems="10"
+    android:inputType="textEmailAddress"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/btn_mvp" />
+    app:layout_constraintTop_toBottomOf="@+id/et_email" />
   <TextView
-    android:id="@+id/textView"
+    android:id="@+id/tv_text"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Demo app for design patterns."
-    app:layout_constraintBottom_toTopOf="@+id/btn_mvc"
+    android:text="TextView"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />

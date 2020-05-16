@@ -1,4 +1,4 @@
-package com.vishal.designpattern.model
+package com.vishal.designpattern.mvp.model
 
 class User {
 	var username = ""

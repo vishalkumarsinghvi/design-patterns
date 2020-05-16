@@ -1,4 +1,4 @@
-package com.vishal.designpattern.view
+package com.vishal.designpattern.mvp.view
 
 import android.os.Bundle
 import android.text.Editable
@@ -7,17 +7,17 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.vishal.designpattern.R
-import com.vishal.designpattern.presenter.MainActivityPresenter
-import com.vishal.designpattern.presenter.MainActivityPresenterImpl
-import kotlinx.android.synthetic.main.activity_main.*
+import com.vishal.designpattern.mvp.presenter.MainActivityPresenter
+import com.vishal.designpattern.mvp.presenter.MainActivityPresenterImpl
+import kotlinx.android.synthetic.main.activity_mvp.*
 
-class MainActivity : AppCompatActivity(), MainActivityPresenterImpl {
+class MVPActivity : AppCompatActivity(), MainActivityPresenterImpl {
 	private var mainActivityPresenter: MainActivityPresenter? = null
 	private var tvText: TextView? = null
 	
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
-		setContentView(R.layout.activity_main)
+		setContentView(R.layout.activity_mvp)
 		
 		mainActivityPresenter = MainActivityPresenter(this)
 		tvText = findViewById(R.id.tv_text)
