@@ -6,6 +6,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.vishal.designpattern.mvc.view.MVCActivity
 import com.vishal.designpattern.mvp.view.MVPActivity
+import com.vishal.designpattern.mvvm.view.MVVMActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 		} else if (p0 == btn_mvp) {
 			startActivity(Intent(this@MainActivity, MVPActivity::class.java))
 		} else if (p0 == btn_mvvm) {
-//			startActivity(Intent(this@MainActivity, MVVMActivity::class.java))
+			startActivity(Intent(this@MainActivity, MVVMActivity::class.java))
 		}
 	}
 }
